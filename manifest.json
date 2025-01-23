@@ -1,7 +1,7 @@
 {
   "name": "Qaamuuska Erey Bixinta",
   "short_name": "Qaamuuska",
-  "start_url": "/",
+  "start_url": "/pwa",
   "display": "standalone",
   "background_color": "#e3f2fd",
   "theme_color": "#2196F3",

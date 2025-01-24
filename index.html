@@ -28,5 +28,20 @@
     <div id="results"></div>
 
     <script src="app.js"></script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js')
+        .then(registration => {
+          console.log('Service Worker registered: ', registration);
+          // Optionally, you can add code here to handle service worker updates
+        })
+        .catch(registrationError => {
+          console.log('Service Worker registration failed: ', registrationError);
+        });
+    });
+  }
+    </script>
 </body>
 </html>

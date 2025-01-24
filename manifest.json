@@ -33,6 +33,18 @@
     "platform": "narrow",
     "form_factor": "narrow"
   }
-]
+],
+   "id": "com.isxaaqacademy",
+  "description": "Qaamuuska erey bixinta waxaa ku urursan erey bixinta ilaa 6 maaddo oo kala ah:\nXisaab, Fisikis, Kimisteri, Bayoloji, Juqraafi, iyo erey bixinta doorashooyinka",
+  "dir": "ltr",
+  "lang": "en",
+  "orientation": "portrait-primary",
+  "categories": [
+    "books",
+    "education",
+    "government",
+    "health",
+    "medical"
+  ]
 
 }

@@ -27,6 +27,13 @@
     </div>
     <div id="results"></div>
 
+    <script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('sw.js')
+  }
+</script>
+
+    
     <script src="app.js"></script>
 
     <script>

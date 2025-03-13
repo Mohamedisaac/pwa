@@ -1,0 +1,12 @@
+{
+  "name": "qaamuuska-erey-bixinta",
+  "version": "1.0.0",
+  "description": "Waa Qaamuus ka kooban in ka badan 54,000 oo erey oo isugu jira erey bixinno iyo qaamuuska Af-Soomaaliga ee Dr. Mansuur",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Maxamed Isxaaq",
+  "license": "MIT"
+}

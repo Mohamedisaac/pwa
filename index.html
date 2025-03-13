@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qaamuuska Erey Bixinta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="tabs">
+        <button onclick="showTab('search')">Baar</button>
+        <button onclick="showTab('subjects')">Arag Ereyada</button>
+    </div>
+
+    <div id="search-tab">
+        <input type="text" id="search-input" placeholder="Baar Erey..." oninput="searchWord()">
+        <div class="dom"><ul id="search-results"></ul></div>
+    </div>
+<!---->
+    <div id="subjects-tab" style="display: none;">
+        <select id="subject-select" onchange="loadSubject()">
+            <option value="">Dooro Qaamuus</option>
+        </select>
+        <ul id="subject-entries"></ul>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/sql-wasm.js"></script>
+
+    <script src="app.js"> </script>
+ 
+
+<!-- About page-->
+    <div class="about-btn">i</div>
+<div class="modal-overlay" onclick="hideAbout()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="hideAbout()">&times;</button>
+        <h4>Ku Saabsan Qaamuuska</h4>
+        <p>This is an offline dictionary app created using web technologies. Features include:</p>
+        <ol>
+            <li>Word search functionality</li>
+            <li>Subject-based browsing</li>
+            <li>Responsive design</li>
+            <li>Offline capability</li>
+        </ol>
+        <div>Mahadcelin: Waxaan u mahadcelinayaa ustaad Xasan Axmed Xuseen oo igu dhaliyay fikradda samaynta barnaamijkan, kaalin wayna ka qaatay isku dabaridka iyo qoridda ereyada qaamuuska. <br> Sidoo kale waxaan u mahadcelinayaa dhammaan ardayda sharafta badan ee nagala qeyb qaatay qoridda ereyada qaamuuska.</div>
+        <div> Fadlan wixii talo ama sixid ah nagala soo xiriir: </div>
+    </div>
+   </div>
+
+</body>
+
+
+
+</html>

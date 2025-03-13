@@ -127,3 +127,17 @@ document.addEventListener('DOMContentLoaded', function() {
         if (e.key === 'Escape') hideAbout();
     });
 });
+
+// Add Service worker
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+        .then(registration => {
+          console.log('Service Worker registered: ', registration);
+          // Optionally, you can add code here to handle service worker updates
+        })
+        .catch(registrationError => {
+          console.log('Service Worker registration failed: ', registrationError);
+        });
+    });
+  }
